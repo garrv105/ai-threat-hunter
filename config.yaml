@@ -1,0 +1,27 @@
+model:
+  lstm_units: 128
+  dropout_rate: 0.3
+  learning_rate: 0.001
+  batch_size: 64
+  epochs: 50
+
+data:
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+  sequence_length: 10
+
+detection:
+  threshold: 0.85
+  real_time: true
+  log_path: "./logs"
+
+features:
+  - packet_length
+  - protocol_type
+  - service
+  - flag
+  - src_bytes
+  - dst_bytes
+  - count
+  - srv_count

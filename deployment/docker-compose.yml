@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  threat-hunter:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    container_name: threat-hunter
+    volumes:
+      - ../models:/app/models
+      - ../logs:/app/logs
+      - ../data:/app/data
+    environment:
+      - LOG_LEVEL=INFO
+    restart: unless-stopped
