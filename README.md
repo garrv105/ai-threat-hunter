@@ -19,7 +19,7 @@ Federated learning for privacy-preserving threat intelligence sharing
 
 📊 Performance Metrics
 MetricScoreAccuracy96.7%Precision94.2%Recall95.8%F1-Score95.0%False Positive Rate0.3%Processing Time<100ms
-🏗️ Architecture
+<pre> ```🏗️ Architecture
 ┌─────────────────┐
 │  Network Traffic │
 └────────┬────────┘
@@ -50,7 +50,7 @@ MetricScoreAccuracy96.7%Precision94.2%Recall95.8%F1-Score95.0%False Positive Rat
     └────┬──────────┘
          │
     ┌────▼──────────┐
-    │ Response      │  Alert, Block, Log
+    │ Response      │  Alert, Block, Log | ``` </pre>
     └───────────────┘
 🚀 Quick Start
 Installation
@@ -114,7 +114,7 @@ while extractor.is_running:
 stats = detector.get_threat_statistics()
 print(stats)
 📁 Project Structure
-ai-threat-hunter/
+<pre> ``` ai-threat-hunter/
 ├── README.md                 # This file
 ├── requirements.txt          # Python dependencies
 ├── setup.py                 # Package setup
@@ -140,7 +140,7 @@ ai-threat-hunter/
 ├── deployment/
 │   ├── Dockerfile
 │   └── docker-compose.yml
-└── docs/                    # Documentation
+└── docs/                    # Documentation | ``` </pre>
 🔬 Research & Datasets
 Datasets Used
 
@@ -229,11 +229,10 @@ CIC-IDS2017: Canadian Institute for Cybersecurity
 PyTorch Team for the excellent deep learning framework
 
 📧 Contact
-Your Name - PhD Candidate in Cybersecurity
+Your Name - Garrv Sipani
 
-Email: your.email@university.edu
-LinkedIn: your-profile
-GitHub: @yourusername
+LinkedIn: https://www.linkedin.com/in/garrv-sipani-a05746311/
+GitHub: @garrv105
 
 
 ⭐ If you find this project useful, please consider giving it a star!
