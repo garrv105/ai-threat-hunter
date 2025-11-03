@@ -50,8 +50,8 @@ MetricScoreAccuracy96.7%Precision94.2%Recall95.8%F1-Score95.0%False Positive Rat
     └────┬──────────┘
          │
     ┌────▼──────────┐
-    │ Response      │  Alert, Block, Log | ``` </pre>
-    └───────────────┘
+    │ Response      │  Alert, Block, Log 
+    └───────────────┘| ``` </pre>
 🚀 Quick Start
 Installation
 bash# Clone repository
