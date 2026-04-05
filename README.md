@@ -1,3 +1,5 @@
+[![CI](https://github.com/garrv105/ai-threat-hunter/actions/workflows/ci.yml/badge.svg)](https://github.com/garrv105/ai-threat-hunter/actions/workflows/ci.yml)
+
 A state-of-the-art deep learning system for real-time network intrusion detection using ensemble models (LSTM, CNN, Isolation Forest) with attention mechanisms.
 🎯 Research Focus
 This project addresses critical challenges in cybersecurity AI:

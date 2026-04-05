@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="ai-threat-hunter",
     version="1.0.0",
-    author="Your Name",
-    author_email="your.email@university.edu",
+    author="Garrv Sipani",
+    author_email="fgarrvs1@jh.edu",
     description="AI-Powered Network Threat Detection System",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/YOUR_USERNAME/ai-threat-hunter",
+    url="https://github.com/garrv105/ai-threat-hunter",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -25,10 +25,18 @@ setup(
         "numpy>=1.24.3",
         "pandas>=2.0.3",
         "scikit-learn>=1.3.0",
-        "torch>=2.0.1",
-        "matplotlib>=3.7.2",
-        "seaborn>=0.12.2",
         "pyyaml>=6.0.1",
-        "tqdm>=4.65.0",
     ],
+    extras_require={
+        "gpu": ["torch>=2.0.1"],
+        "capture": ["scapy>=2.5.0"],
+        "viz": ["matplotlib>=3.7.2", "seaborn>=0.12.2"],
+        "full": [
+            "torch>=2.0.1",
+            "scapy>=2.5.0",
+            "matplotlib>=3.7.2",
+            "seaborn>=0.12.2",
+            "tqdm>=4.65.0",
+        ],
+    },
 )
